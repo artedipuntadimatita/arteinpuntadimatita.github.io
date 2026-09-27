@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arte in Punta di Matita — Disegni personalizzati</title>
+<style>
+  :root{
+    --ink:#222;
+    --paper:#faf8f4;
+    --card:#fff;
+    --line:#e7e1d8;
+    --accent:#9b7655;
+    --muted:#716c66;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+  .wrap{max-width:1100px;margin:auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:10;background:rgba(250,248,244,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+  .brand{font-family:Georgia,serif;font-style:italic;font-weight:700;font-size:22px}
+  nav a{color:var(--ink);text-decoration:none;margin-left:24px;font-size:14px}
+  .hero{padding:85px 0 70px;display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+  .eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-size:12px;font-weight:700}
+  h1{font-family:Georgia,serif;font-size:clamp(46px,7vw,78px);line-height:.98;margin:14px 0 22px;font-weight:500}
+  .hero p{font-size:19px;line-height:1.6;color:var(--muted);max-width:600px}
+  .buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+  .btn{display:inline-block;padding:15px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px}
+  .primary{background:var(--ink);color:white}
+  .secondary{border:1px solid var(--ink);color:var(--ink)}
+  .sketch{min-height:430px;border:1px solid var(--line);background:#f2eee7;display:flex;align-items:center;justify-content:center;position:relative;box-shadow:12px 12px 0 #e7dfd4}
+  .sketch:before{content:"";width:72%;height:78%;border:2px solid #777;transform:rotate(-4deg);position:absolute;opacity:.35}
+  .sketch span{font-family:Georgia,serif;font-size:80px;color:#777;transform:rotate(-8deg);opacity:.5}
+  section{padding:78px 0}
+  .section-title{font-family:Georgia,serif;font-size:42px;font-weight:500;margin:0 0 12px}
+  .intro{color:var(--muted);line-height:1.7;max-width:700px}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}
+  .step{background:var(--card);border:1px solid var(--line);padding:28px;border-radius:20px}
+  .num{font-family:Georgia,serif;font-size:38px;color:var(--accent)}
+  .step h3{margin:15px 0 8px}
+  .step p{color:var(--muted);line-height:1.6}
+  .form-box{background:#eee9e1;border-radius:28px;padding:35px;margin-top:35px}
+  form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  label{font-size:13px;font-weight:700;display:block;margin-bottom:7px}
+  input,select,textarea{width:100%;border:1px solid #d7d0c7;background:white;border-radius:12px;padding:14px;font:inherit;outline:none}
+  textarea{min-height:140px;resize:vertical}
+  .full{grid-column:1/-1}
+  .check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted)}
+  .check input{width:auto;margin-top:2px}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:30px}
+  .gallery .tile{aspect-ratio:1;background:#e8e2d8;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:24px;color:#777}
+  .price{font-family:Georgia,serif;font-size:34px;margin:8px 0}
+  .faq{border-top:1px solid var(--line)}
+  details{padding:20px 0;border-bottom:1px solid var(--line)}
+  summary{cursor:pointer;font-weight:700}
+  details p{color:var(--muted);line-height:1.6}
+  footer{padding:45px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+  @media(max-width:760px){
+    nav a{display:none}
+    .hero{grid-template-columns:1fr;padding-top:55px}
+    .sketch{min-height:300px}
+    .steps,.gallery{grid-template-columns:1fr}
+    form{grid-template-columns:1fr}
+    .full{grid-column:auto}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <div class="brand">arteinpuntadimatita</div>
+      <div>
+        <a href="#come-funziona">Come funziona</a>
+        <a href="#richiesta">Il tuo disegno</a>
+        <a href="#portfolio">Portfolio</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Disegni personalizzati • fatti a mano</div>
+    <h1>Tu lo immagini.<br>Io lo disegno.</h1>
+    <p>
+      Raccontami cosa vuoi trasformare in un disegno: una persona, un animale,
+      un ricordo, un fiore o un'idea speciale. Tu mi dai l'ispirazione,
+      io creo un'illustrazione pensata per te.
+    </p>
+    <div class="buttons">
+      <a class="btn primary" href="#richiesta">Richiedi il tuo disegno</a>
+      <a class="btn secondary" href="#portfolio">Guarda i lavori</a>
+    </div>
+  </div>
+  <div class="sketch"><span>✎</span></div>
+</section>
+
+<section id="come-funziona">
+  <div class="wrap">
+    <h2 class="section-title">Come funziona</h2>
+    <p class="intro">Un percorso semplice per trasformare la tua idea in un disegno unico.</p>
+    <div class="steps">
+      <div class="step"><div class="num">01</div><h3>Raccontami l'idea</h3><p>Compila il modulo spiegando cosa vuoi, lo stile, le dimensioni e tutti i dettagli importanti.</p></div>
+      <div class="step"><div class="num">02</div><h3>Definiamo il progetto</h3><p>Ti ricontatto per chiarire i dettagli e concordare il prezzo prima di iniziare.</p></div>
+      <div class="step"><div class="num">03</div><h3>Creo per te</h3><p>Realizzo il disegno a mano e ti aggiorno sul lavoro. Alla fine ricevi il tuo disegno personalizzato.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="richiesta">
+  <div class="wrap">
+    <h2 class="section-title">Raccontami il tuo disegno</h2>
+    <p class="intro">Più dettagli mi dai, più posso capire ciò che hai in mente.</p>
+    <div class="form-box">
+      <form id="requestForm">
+        <div>
+          <label>Nome</label>
+          <input required name="nome" placeholder="Il tuo nome">
+        </div>
+        <div>
+          <label>Email o Instagram</label>
+          <input required name="contatto" placeholder="@tuoprofilo o email">
+        </div>
+        <div>
+          <label>Cosa vuoi disegnare?</label>
+          <select name="tipo">
+            <option>Ritratto</option>
+            <option>Animale</option>
+            <option>Fiore / natura</option>
+            <option>Ricordo / regalo</option>
+            <option>Illustrazione personalizzata</option>
+            <option>Altro</option>
+          </select>
+        </div>
+        <div>
+          <label>Formato</label>
+          <select name="formato">
+            <option>A4</option><option>A5</option><option>Altro da concordare</option>
+          </select>
+        </div>
+        <div class="full">
+          <label>Descrivi la tua idea</label>
+          <textarea required name="idea" placeholder="Esempio: vorrei un disegno di due persone con un fiore tra loro, in stile matita, delicato e semplice..."></textarea>
+        </div>
+        <div class="full">
+          <label>Foto o riferimento</label>
+          <input type="file" name="foto" accept="image/*">
+        </div>
+        <div class="full check">
+          <input type="checkbox" required>
+          <span>Confermo di aver inserito informazioni corrette e accetto di essere ricontattato per la richiesta.</span>
+        </div>
+        <div class="full">
+          <button class="btn primary" type="submit">Invia la richiesta</button>
+          <span id="sent" style="margin-left:12px;color:#716c66"></span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <h2 class="section-title">Alcuni miei lavori</h2>
+    <p class="intro">Qui puoi inserire le foto dei tuoi disegni migliori, così chi visita il sito può vedere il tuo stile.</p>
+    <div class="gallery">
+      <div class="tile">Ritratto</div>
+      <div class="tile">Fiori</div>
+      <div class="tile">Ricordi</div>
+      <div class="tile">Animali</div>
+      <div class="tile">Illustrazioni</div>
+      <div class="tile">Su commissione</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">Domande frequenti</h2>
+    <div class="faq">
+      <details><summary>Quanto costa un disegno?</summary><p>Il prezzo dipende da formato, soggetto e livello di dettaglio. Dopo aver visto la richiesta posso preparare un preventivo.</p></details>
+      <details><summary>Posso mandarti una foto come riferimento?</summary><p>Sì. Puoi allegare una o più foto e spiegare quali elementi vuoi nel disegno.</p></details>
+      <details><summary>Posso chiedere un regalo personalizzato?</summary><p>Certo: puoi raccontarmi la persona, l'occasione e il tipo di ricordo che vuoi trasformare in disegno.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>arteinpuntadimatita</strong><br>
+    Disegni personalizzati fatti a mano • Instagram: @arteinpuntadimatita
+  </div>
+</footer>
+
+<script>
+document.getElementById('requestForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  document.getElementById('sent').textContent =
+    'Richiesta pronta! Per ora questo modulo è una demo: possiamo collegarlo a email, WhatsApp o Instagram.';
+});
+</script>
+</body>
+</html>
