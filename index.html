@@ -41,8 +41,11 @@
 }
   nav a{color:var(--ink);text-decoration:none;margin-left:24px;font-size:14px}
   .hero{
-  padding:85px 0 70px;
-  display:block;
+  padding:90px 0 90px;
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:50px;
+  align-items:center;
 }
 .hero-image{
   display:flex;
@@ -50,11 +53,11 @@
   align-items:center;
 }
 .hero-image img{
-  width:75%;
-  max-width:320px;
+  width:100%;
+  max-width:300px;
   height:auto;
-  object-fit:contain;
   display:block;
+  margin:auto;
 }
 .eyebrow{
   .eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-size:12px;font-weight:700}
