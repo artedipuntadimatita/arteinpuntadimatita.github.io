@@ -18,12 +18,7 @@
   body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
   .wrap{max-width:1100px;margin:auto;padding:0 22px}
   header{position:sticky;top:0;z-index:10;background:rgba(250,248,244,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  nav{
-  height:110px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
+  nav{height:72px;display:flex;align-items:center;justify-content:space-between}
   .brand{
   display:flex;
   align-items:center;
@@ -35,17 +30,15 @@
 }
 
 .brand img{
-  width:99px;
-  height:99px;
+  width:45px;
+  height:45px;
   object-fit:contain;
 }
   nav a{color:var(--ink);text-decoration:none;margin-left:24px;font-size:14px}
-  .hero{
+  hero{
   padding:85px 0 70px;
   display:block;
 }
-
-.eyebrow{
   .eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-size:12px;font-weight:700}
   h1{font-family:Georgia,serif;font-size:clamp(46px,7vw,78px);line-height:.98;margin:14px 0 22px;font-weight:500}
   .hero p{font-size:19px;line-height:1.6;color:var(--muted);max-width:600px}
@@ -117,10 +110,7 @@ display:block;
 <header>
   <div class="wrap">
     <nav>
-     <div class="brand">
-  <img src="logo arte.jpeg" alt="Arte in Punta di Matita">
-  <span>arteinpuntadimatita</span>
-</div>
+      <div class="brand">arteinpuntadimatita</div>
       <div>
         <a href="#come-funziona">Come funziona</a>
         <a href="#richiesta">Il tuo disegno</a>
@@ -132,7 +122,7 @@ display:block;
 
 <main>
 <section class="hero">
-  <div class="hero-text">
+  <div>
     <div class="eyebrow">Disegni personalizzati • fatti a mano</div>
     <h1>Disegni personalizzati, <br>creati per te.</h1>
     <p>
@@ -144,9 +134,9 @@ display:block;
       <a class="btn primary" href="#richiesta">Richiedi il tuo disegno</a>
       <a class="btn secondary" href="#portfolio">Guarda i lavori</a>
     </div>
- 
   </div>
 </section>
+
 <section id="come-funziona">
   <div class="wrap">
     <h2 class="section-title">Come funziona</h2>
