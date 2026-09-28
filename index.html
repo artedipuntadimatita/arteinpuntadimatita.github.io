@@ -40,10 +40,26 @@
   object-fit:contain;
 }
   nav a{color:var(--ink);text-decoration:none;margin-left:24px;font-size:14px}
-  hero{
+  .hero{
   padding:85px 0 70px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:55px;
+  align-items:center;
+}
+.hero-image{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.hero-image img{
+  width:100%;
+  max-width:430px;
+  height:auto;
+  object-fit:contain;
   display:block;
 }
+.eyebrow{
   .eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-size:12px;font-weight:700}
   h1{font-family:Georgia,serif;font-size:clamp(46px,7vw,78px);line-height:.98;margin:14px 0 22px;font-weight:500}
   .hero p{font-size:19px;line-height:1.6;color:var(--muted);max-width:600px}
