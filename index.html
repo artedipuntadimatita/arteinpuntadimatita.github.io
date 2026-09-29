@@ -35,9 +35,19 @@
   object-fit:contain;
 }
   nav a{color:var(--ink);text-decoration:none;margin-left:24px;font-size:14px}
-  hero{
-  padding:85px 0 70px;
-  display:block;
+  .hero{
+  padding:85px 40px 70px;
+  display:grid;
+  grid-template-columns:1.4fr 0.8fr;
+  gap:50px;
+  align-items:center;
+}
+.hero-image{
+  width:100%;
+  max-width:330px;
+  max-height:480px;
+  object-fit:contain;
+  justify-self:end;
 }
   .eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-size:12px;font-weight:700}
   h1{font-family:Georgia,serif;font-size:clamp(46px,7vw,78px);line-height:.98;margin:14px 0 22px;font-weight:500}
