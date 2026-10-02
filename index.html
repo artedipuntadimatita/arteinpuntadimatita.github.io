@@ -230,6 +230,23 @@ textarea:focus{
   .full{grid-column:1/-1}
   .check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted)}
   .check input{width:auto;margin-top:2px}
+ .delivery-options{
+  display:flex;
+  gap:20px;
+  overflow-x:auto;
+}
+
+.delivery-option{
+  flex:0 0 220px;
+}
+
+.delivery-option img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:18px;
+  display:block;
+}
   .gallery{
 display:grid;
 grid-template-columns:repeat(3,1fr);
