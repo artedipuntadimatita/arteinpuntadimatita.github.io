@@ -553,6 +553,8 @@ document.querySelectorAll('input[name="consegna"]').forEach(function(radio){
   radio.addEventListener('change', function(){
     document.getElementById('consegnaScelta').value = this.value;
   });
+});
+
 document.getElementById('requestForm').addEventListener('submit', function(){
   document.getElementById('sent').textContent =
     'Invio della richiesta in corso...';
