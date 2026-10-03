@@ -553,11 +553,9 @@ document.querySelectorAll('input[name="consegna"]').forEach(function(radio){
   radio.addEventListener('change', function(){
     document.getElementById('consegnaScelta').value = this.value;
   });
-});
-document.getElementById('requestForm').addEventListener('submit', function(e){
-  e.preventDefault();
+document.getElementById('requestForm').addEventListener('submit', function(){
   document.getElementById('sent').textContent =
-    'Richiesta pronta! Per ora questo modulo è una demo: possiamo collegarlo a email, WhatsApp o Instagram.';
+    'Invio della richiesta in corso...';
 });
 </script>
 </body>
