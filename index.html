@@ -348,7 +348,18 @@ footer strong{
     nav a{display:none}
     .hero{grid-template-columns:1fr;padding-top:55px}
     .sketch{min-height:300px}
-    .steps,.gallery{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr}
+
+.gallery{
+  display:flex;
+  overflow-x:auto;
+  gap:24px;
+  padding-bottom:10px;
+}
+
+.gallery .tile{
+  flex:0 0 75%;
+}
     form{grid-template-columns:1fr}
     .full{grid-column:auto}
   }
