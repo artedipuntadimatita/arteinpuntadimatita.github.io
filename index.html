@@ -419,22 +419,22 @@ footer strong{
   <div class="wrap">
     <h2 class="section-title">Raccontami il tuo disegno</h2>
     <p class="intro">Più dettagli mi dai, più posso capire ciò che hai in mente.</p>
+
     <div class="form-box">
-  <form id="requestForm" action="https://formspree.io/f/mkjgdkjv" method="POST" enctype="multipart/form-data">
+      <form id="requestForm" action="https://formspree.io/f/mkjgdkjv" method="POST" enctype="multipart/form-data">
 
-    <input type="hidden" name="consegna" id="consegnaScelta" value="" required>
+        <input type="hidden" name="consegna" id="consegnaScelta" value="" required>
 
-    <div class="full">
-      <label>Nome e cognome</label>
-      <input required name="nome" placeholder="Il tuo nome e cognome">
-    </div>
+        <div>
           <label>Nome e cognome</label>
-<input required name="nome" placeholder="Il tuo nome e cognome">
+          <input required name="nome" placeholder="Il tuo nome e cognome">
         </div>
+
         <div>
           <label>Email o Instagram</label>
           <input required name="contatto" placeholder="@tuoprofilo o email">
         </div>
+
         <div>
           <label>Cosa vuoi disegnare?</label>
           <select name="tipo">
@@ -447,7 +447,7 @@ footer strong{
           </select>
         </div>
         <div>
-          <label>Formato</label>
+         <label>Formato</label>
           <select name="formato">
             <option>A4</option><option>A5</option><option>Altro da concordare</option>
           </select>
