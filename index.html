@@ -419,9 +419,10 @@ footer strong{
     <h2 class="section-title">Raccontami il tuo disegno</h2>
     <p class="intro">Più dettagli mi dai, più posso capire ciò che hai in mente.</p>
     <div class="form-box">
-     <input type="hidden" name="consegna" id="consegnaScelta" value="">
-        <div>
-      <form id="requestForm" action="https://formspree.io/f/mkjgdkjv" method="POST" enctype="multipart/form-data">
+     <div class="form-box">
+  <input type="hidden" name="consegna" id="consegnaScelta" value="" required>
+  <div>
+    <form id="requestForm" action="https://formspree.io/f/mkjgdkjv" method="POST" enctype="multipart/form-data">
   
           <label>Nome</label>
           <input required name="nome" placeholder="Il tuo nome">
