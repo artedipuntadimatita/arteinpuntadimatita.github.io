@@ -461,8 +461,7 @@ footer strong{
     <div class="form-box">
       <form id="requestForm" action="https://formspree.io/f/mkjgdkjv" method="POST" enctype="multipart/form-data">
 
-        <input type="hidden" name="consegna" id="consegnaScelta" value="" required>
-
+        <input type="hidden" name="consegna" id="consegnaScelta" value="">
         <div>
           <label>Nome e cognome</label>
           <input required name="nome" placeholder="Il tuo nome e cognome">
@@ -651,7 +650,7 @@ footer strong{
 </footer>
 
  <script>
-document.querySelectorAll('input[name="consegna"]').forEach(function(radio){
+document.querySelectorAll('input[type="radio"][name="consegna"]').forEach(function(radio){
   radio.addEventListener('change', function(){
     document.getElementById('consegnaScelta').value = this.value;
   });
