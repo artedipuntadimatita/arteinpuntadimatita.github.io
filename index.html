@@ -497,10 +497,18 @@ footer strong{
           <label>Foto o riferimento</label>
           <input type="file" name="foto" accept="image/*">
         </div>
-        <div class="full check">
-          <input type="checkbox" required>
-          <span>Confermo di aver inserito informazioni corrette e accetto di essere ricontattato per la richiesta.</span>
-        </div>
+       <div class="full check">
+  <input
+    type="checkbox"
+    id="consenso"
+    name="consenso"
+    value="Accettato"
+    required
+  >
+  <label for="consenso">
+    Confermo di aver inserito informazioni corrette e accetto di essere ricontattato per la richiesta.
+  </label>
+</div>
         <div class="full">
           <button class="btn primary" type="submit">Invia la richiesta</button>
           <span id="sent" style="margin-left:12px;color:#716c66"></span>
