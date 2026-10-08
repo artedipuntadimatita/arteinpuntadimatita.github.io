@@ -226,12 +226,20 @@ form > div:first-child{grid-column:1/-1}
 }
  input,select,textarea{
   width:100%;
-  border:1px solid #c4d1dc;
-  background:#f8fbfd;;
+  border:1px solid #cbd6e0;
+  background:#f7f9fb;
+  color:#172b3f;
   border-radius:14px;
   padding:14px;
   font:inherit;
   outline:none;
+  transition:border-color .2s ease, box-shadow .2s ease;
+}
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:#527895;
+  box-shadow:0 0 0 3px rgba(82,120,149,.18);
 }
  input:focus,
 select:focus,
