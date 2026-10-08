@@ -494,9 +494,18 @@ footer strong{
           <textarea required name="idea" placeholder="Esempio: vorrei un disegno di due persone con un fiore tra loro, in stile matita, delicato e semplice..."></textarea>
         </div>
         <div class="full">
-          <label>Foto o riferimento</label>
-          <input type="file" name="foto" accept="image/*">
-        </div>
+  <label for="foto">Foto o riferimenti</label>
+  <input
+    type="file"
+    id="foto"
+    name="foto"
+    accept="image/jpeg,image/png,image/webp"
+    multiple
+  >
+  <small style="display:block;margin-top:8px;color:#dce5ed;line-height:1.5;">
+    Puoi allegare una o più foto di riferimento. Formati accettati: JPG, PNG e WEBP.
+  </small>
+</div>
        <div class="full check">
   <input
     type="checkbox"
