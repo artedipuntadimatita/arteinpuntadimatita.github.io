@@ -216,7 +216,14 @@ nav a{
 }
  form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 form > div:first-child{grid-column:1/-1}
-  label{font-size:13px;font-weight:700;display:block;margin-bottom:7px}
+  label{
+  font-size:13px;
+  font-weight:700;
+  display:block;
+  margin-bottom:7px;
+  color:#ffffff;
+  letter-spacing:.2px;
+}
  input,select,textarea{
   width:100%;
   border:1px solid #c4d1dc;
@@ -232,7 +239,16 @@ textarea:focus{
   border-color:#527895;
   box-shadow:0 0 0 3px rgba(82,120,149,.12);
 }
-  textarea{min-height:140px;resize:vertical}
+  textarea{
+  min-height:160px;
+  resize:vertical;
+  line-height:1.6;
+}
+ input::placeholder,
+textarea::placeholder{
+  color:#718191;
+  opacity:1;
+}
   .full{grid-column:1/-1}
   .check{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--muted)}
   .check input{width:auto;margin-top:2px}
