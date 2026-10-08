@@ -161,6 +161,20 @@ nav a{
   transform:translateY(-1px);
   box-shadow:0 6px 16px rgba(23,43,63,.18);
 }
+ .form-submit{
+  border:none;
+  cursor:pointer;
+  width:100%;
+  margin-top:4px;
+  font-size:15px;
+  padding:16px 24px;
+  transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.form-submit:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 20px rgba(0,0,0,.20);
+}
   .secondary{
   border:1px solid #527895;
   color:#315d7a;
@@ -610,9 +624,12 @@ footer strong{
   </label>
 </div>
         <div class="full">
-          <button class="btn primary" type="submit">Invia la richiesta</button>
-          <span id="sent" style="margin-left:12px;color:#716c66"></span>
-        </div>
+  <button class="btn primary form-submit" type="submit">
+    Invia la richiesta
+  </button>
+  <span id="sent" style="margin-left:12px;color:#dce5ed"></span>
+</div>
+       
       </form>
     </div>
   </div>
