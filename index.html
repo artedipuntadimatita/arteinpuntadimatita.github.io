@@ -342,11 +342,28 @@ textarea::placeholder{
   width:100%;
   text-align:left;
 }
- .gallery{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
+.gallery{
+  display:flex;
+  flex-wrap:nowrap;
+  overflow-x:auto;
+  gap:16px;
   margin-top:30px;
+  padding:0 4px 12px;
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch;
+}
+
+.gallery .tile{
+  flex:0 0 220px;
+  min-width:0;
+}
+
+.gallery .tile img{
+  width:100%;
+  max-width:220px;
+  aspect-ratio:1 / 1;
+  object-fit:contain;
+  display:block;
 }
 .gallery .tile{
 background:transparent;
